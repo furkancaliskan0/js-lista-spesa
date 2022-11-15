@@ -1,13 +1,15 @@
 // Data una lista della spesa, stampare sulla pagina gli elementi della lista individualmente con un ciclo for che poi commentate, e poi fate lo stesso con il while (che lasciate attivo).
 
-const array = ["Pane","Zucchine", "Pesce", "Latte"];
+const listaSpesa = ["Pane","Zucchine", "Pesce", "Latte", "pomodori", "insalata", "formaggio"];
 
+const lista = document.getElementById("lista");
 
 let i = 0;
 
-while (i < array.length) {
+while (i < listaSpesa.length) {
 
-    console.log(array[i]);
-    
+    lista.innerHTML += `<div>${listaSpesa[i]}</div>`;
+
+
     i++;
 }
