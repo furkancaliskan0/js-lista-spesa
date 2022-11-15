@@ -3,9 +3,11 @@
 const array = ["Pane","Zucchine", "Pesce", "Latte"];
 
 
-for (let i = 0; i < array.length; i++) {
+let i = 0;
 
-    
+while (i < array.length) {
+
     console.log(array[i]);
-
+    
+    i++;
 }
